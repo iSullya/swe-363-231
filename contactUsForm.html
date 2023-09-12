@@ -17,27 +17,85 @@
     <p>Or do not hesatate to reach out to us in case of any <br> inquiry or question via <a href="contactUs.html">email</a> and we will get back to you soon</p>
 
     <form action="" method="get" class="contactUsForm">
+
+      <!-- PERSONAL INFO  -->
+      <fieldset>
+        <legend>Personal Info</legend>
+
         <div class="contactUsForm">
           <label for="name">Enter your name: </label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="name" id="name" placeholder="Sultan" required />
         </div>
-        <p></p>
         <div class="contactUsForm">
-          <label for="email">Enter your email: </label>
-          <input type="email" name="email" id="email" required />
+          <label for="name">Enter your phone number: </label>
+          <input type="tel" name="phone" id="phone" placeholder="0512345678" pattern="0{1}5{1}[0-9]{1}[0-9]{3}[0-9]{4}" required />
         </div>
-        <p></p>
-        <label for="message">Write your message:</label>
+      </fieldset>
 
-        <p></p>
-
+      <!-- WHAT DO YOU WANT  -->
+      <fieldset>
+        <legend>Suggest A Recipe</legend>
         <div class="contactUsForm">
-            <textarea id="message" name="message" cols="30" rows="5" placeholder="your message here..." required></textarea>
-        </div>
+          <label for="coffeeRecipe">Brewer Type:</label>
 
-        <div class="contactUsForm">
-          <input type="submit" value="Send" />
+          <select name="coffeeRecipe" id="coffeeRecipe" >
+            <optgroup label="Pourover">
+            <option value="v60">V60 Dripper</option>
+          </optgroup>
+
+          <optgroup label="Immersion">
+            <option value="clever">Clever Dripper</option>
+            <option value="french press">French Press</option>
+          </optgroup>
+          </select>
+          <br>
+          <label for="name">How much coffee: </label>
+          <input type="number" name="coffeeG" id="coffeeG" placeholder="E.g 20g" required />
+          <br>
+          <label for="name">How Much Water: </label>
+          <input type="number" name="coffeeW" id="coffeeW" placeholder="E.g 300g" required />
+          <br>
+          <label for="name">Hot Or Cold: </label>
+          <br>
+          <input type="radio" id="hot" name="HotOrCold" value="HOT" >
+          <label for="hot">HOT</label> 
+
+          <input type="radio" id="cold" name="HotOrCold" value="COLD" required>
+          <label for="cold">COLD</label> 
+          <br>
+          <br>
+          
+          <label for="notes">Steps/Notes:</label>
+          <br>
+          <textarea id="message" name="message" cols="30" rows="5" placeholder="Steps/Notes here..." required></textarea>
+        
+          
         </div>
+        
+      </fieldset>
+      <fieldset>
+        <legend>How Did You hear About Us?</legend>
+        <div class="contactUsForm">
+          <input type="checkbox" name="test" id="op1" value="op1">
+          <label for="op1">A friend's suggestion</label>
+        </div>
+        <div>
+          <input type="checkbox" name="test" id="op2" value="op2">
+          <label for="op2">Online ads</label>
+        </div>
+        <div>
+          <input type="checkbox" name="test" id="op3" value="op3">
+          <label for="op3">Social media</label>
+        </div>
+        <div>
+          <input type="checkbox" name="test" id="op4" value="op4">
+          <label for="op4">Search engine</label>
+        </div>
+      </fieldset>
+        <div class="contactUsForm">
+          <input type="submit" value="Submit" />
+        </div>
+        
       </form>
   </body>
 </html>
