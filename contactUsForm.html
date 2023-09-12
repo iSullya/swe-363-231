@@ -42,24 +42,25 @@
             <optgroup label="Pourover">
             <option value="v60">V60 Dripper</option>
           </optgroup>
-
           <optgroup label="Immersion">
             <option value="clever">Clever Dripper</option>
             <option value="french press">French Press</option>
           </optgroup>
           </select>
           <br>
-          <label for="name">How much coffee: </label>
-          <input type="number" name="coffeeG" id="coffeeG" placeholder="E.g 20g" required />
+
+          <label for="name">How Much Coffee grounds(in grams): </label>
+          <input type="number" name="coffeeG" min="0" id="coffeeG" placeholder="E.g 20g" required />
           <br>
-          <label for="name">How Much Water: </label>
-          <input type="number" name="coffeeW" id="coffeeW" placeholder="E.g 300g" required />
+
+          <label for="name">How Much Water(in mL): </label>
+          <input type="number" name="coffeeW" min="0" id="coffeeW" placeholder="E.g 300mLs" required />
           <br>
+
           <label for="name">Hot Or Cold: </label>
           <br>
           <input type="radio" id="hot" name="HotOrCold" value="HOT" >
           <label for="hot">HOT</label> 
-
           <input type="radio" id="cold" name="HotOrCold" value="COLD" required>
           <label for="cold">COLD</label> 
           <br>
@@ -93,7 +94,9 @@
         </div>
       </fieldset>
         <div class="contactUsForm">
-          <input type="submit" value="Submit" />
+          <a href="thankYou.html">
+          <button type="button">Submit</button>
+          </a>
         </div>
         
       </form>
