@@ -8,96 +8,111 @@
   </head>
 
   <body>
-    <h1>Contact Us Form</h1>
-
+    <header>
+      <h1>Contact Us Form</h1>
+    </header>
     <a href="index.html">BACK</a>
 
-    
     <p>Fill out this fourm in case of any suggestion or ideas</p>
-    <p>Or do not hesatate to reach out to us in case of any <br> inquiry or question via <a href="contactUs.html">email</a> and we will get back to you soon</p>
 
-    <form action="thankYou.html" method="get" class="contactUsForm">
+    <main>
+      <form action="thankYou.html" method="get" class="contactUsForm">
 
-      <!-- PERSONAL INFO  -->
-      <fieldset>
-        <legend>Personal Info</legend>
+        
+        <section>   
+          <!-- PERSONAL INFO  -->
+          <fieldset>
+            <legend>Personal Info</legend>
 
-        <div class="contactUsForm">
-          <label for="name">Enter your name: </label>
-          <input type="text" name="name" id="name" placeholder="Sultan" required />
-        </div>
-        <div class="contactUsForm">
-          <label for="name">Enter your phone number: </label>
-          <input type="tel" name="phone" id="phone" placeholder="0512345678" pattern="0{1}5{1}[0-9]{1}[0-9]{3}[0-9]{4}" required />
-        </div>
-      </fieldset>
-
-      <!-- WHAT DO YOU WANT  -->
-      <fieldset>
-        <legend>Suggest A Recipe</legend>
-        <div class="contactUsForm">
-          <label for="coffeeRecipe">Brewer Type:</label>
-
-          <select name="coffeeRecipe" id="coffeeRecipe" >
-            <optgroup label="Pourover">
-            <option value="v60">V60 Dripper</option>
-          </optgroup>
-          <optgroup label="Immersion">
-            <option value="clever">Clever Dripper</option>
-            <option value="french press">French Press</option>
-          </optgroup>
-          </select>
+            
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" placeholder="Sultan" required />
+              <br> <br>
+              <label for="name">Enter your phone number: </label>
+              <input type="tel" name="phone" id="phone" placeholder="0512345678" pattern="0{1}5{1}[0-9]{1}[0-9]{3}[0-9]{4}" required />
+            
+          </fieldset>
           <br>
+        </section>
+        
+        <section>
+          <!-- WHAT DO YOU WANT  -->
+          <fieldset>
+            <legend>Suggest a Recipe</legend>
+              <!--Brewing type options-->
+              <label for="coffeeRecipe">Brewer Type:</label>
 
-          <label for="name">How Much Coffee grounds(in grams): </label>
-          <input type="number" name="coffeeG" min="0" id="coffeeG" placeholder="E.g 20g" required />
-          <br>
+              <select name="coffeeRecipe" id="coffeeRecipe">
+                <optgroup label="Pourover">
+                  <option value="v60">V60 Dripper</option>
+                </optgroup>
 
-          <label for="name">How Much Water(in mL): </label>
-          <input type="number" name="coffeeW" min="0" id="coffeeW" placeholder="E.g 300mLs" required />
-          <br>
+                <optgroup label="Immersion">
+                  <option value="clever">Clever Dripper</option>
+                  <option value="french press">French Press</option>
+                </optgroup>
+              </select>
+              <!-------------------->
+              <br><br>
 
-          <label for="name">Hot Or Cold: </label>
-          <br>
-          <input type="radio" id="hot" name="HotOrCold" value="HOT" >
-          <label for="hot">HOT</label> 
-          <input type="radio" id="cold" name="HotOrCold" value="COLD" required>
-          <label for="cold">COLD</label> 
-          <br>
-          <br>
+
+              <label for="name">How Much Coffee grounds(in grams): </label>
+              <input type="number" name="coffeeG" min="0" id="coffeeG" placeholder="E.g 20g" required />
+              <br><br>
+
+              <label for="name">How Much Water(in mL): </label>
+              <input type="number" name="coffeeW" min="0" id="coffeeW" placeholder="E.g 300mLs" required />
+              <br><br>
+
+
+              <label for="name">Hot Or Cold: </label>
+              <br>
+              <input type="radio" id="hot" name="HotOrCold" value="HOT" >
+              <label for="hot">HOT</label> 
+              <input type="radio" id="cold" name="HotOrCold" value="COLD" required>
+              <label for="cold">COLD</label> 
+              <br><br>
+              
+              <label for="notes">Steps/Notes:</label>
+              <br>
+              <textarea id="message" name="message" cols="30" 
+                rows="5" placeholder="Steps/Notes here..." required></textarea>
+
+          </fieldset>
+        </section>
+
+
+        <section>
+          <!--How did you hear about us-->
+          <fieldset>
+            <legend>How Did You hear About Us?</legend>
+
+              <!--Options-->
+              <input type="checkbox" name="test" id="op1" value="op1">
+              <label for="op1">A friend's suggestion</label><br>
           
-          <label for="notes">Steps/Notes:</label>
-          <br>
-          <textarea id="message" name="message" cols="30" rows="5" placeholder="Steps/Notes here..." required></textarea>
-        
-          
-        </div>
-        
-      </fieldset>
-      <fieldset>
-        <legend>How Did You hear About Us?</legend>
-        <div class="contactUsForm">
-          <input type="checkbox" name="test" id="op1" value="op1">
-          <label for="op1">A friend's suggestion</label>
-        </div>
-        <div>
-          <input type="checkbox" name="test" id="op2" value="op2">
-          <label for="op2">Online ads</label>
-        </div>
-        <div>
-          <input type="checkbox" name="test" id="op3" value="op3">
-          <label for="op3">Social media</label>
-        </div>
-        <div>
-          <input type="checkbox" name="test" id="op4" value="op4">
-          <label for="op4">Search engine</label>
-        </div>
-      </fieldset>
+              <input type="checkbox" name="test" id="op2" value="op2">
+              <label for="op2">Online ads</label><br>
+            
+              <input type="checkbox" name="test" id="op3" value="op3">
+              <label for="op3">Social media</label><br>
+            
+              <input type="checkbox" name="test" id="op4" value="op4">
+              <label for="op4">Search engine</label><br>
 
-        <div class="contactUsForm" >
-          <input type="submit" value="Submit" >
-        </div>
-        
-      </form>
+              <input type="checkbox" name="test" id="op5" value="op5">
+              <label for="op5">Others</label><br>
+              <!--      -->
+          </fieldset>
+        </section>
+
+          <div class="contactUsForm" >
+            <input type="submit" value="Submit" >
+          </div>
+        </form>
+      </main>
+      <p>Do not hesatate to reach out to us in case of any <br>
+        inquiry or question via <a href="contactUs.html">email</a> 
+        and we will get back to you soon</p>
   </body>
 </html>
