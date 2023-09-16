@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(27, 27, 27);
+    color: #b8bad4;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    font-size: large;
+    margin: 15px;
+    display: inline;
+}
+
+a:visited {
+    color: rgb(60, 106, 206);
+}
