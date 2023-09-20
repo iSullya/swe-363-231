@@ -1,18 +1,20 @@
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(27, 27, 27); 
     color: #b8bad4;
 }
 
 img {
+
     display: block;
 }
 
 a {
-    color: lightblue;
+    color: green;
     text-decoration: none;
 }
 
 a:hover {
+
     font-weight: bold;
 }
 

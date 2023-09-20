@@ -1,0 +1,51 @@
+body {
+    /* background-color: rgb(27, 27, 27);  */
+    /* color: #b8bad4; */
+}
+
+img {
+
+    display: block;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+
+    font-weight: bold;
+}
+
+nav li {
+    font-size: large;
+    margin: 15px;
+    display: inline;
+}
+
+a:visited {
+    color: rgb(60, 106, 206);
+}
+
+table{
+    table-layout: fixed;
+    /* width: 100%; */
+    text-align: center;
+    border-collapse: collapse;
+}
+thead{
+    text-transform: uppercase;
+}
+
+.top{
+    background-color: #eb5406;
+}
+
+em{
+    background: lightblue;
+}
+em#the_most_important{
+    background: gold;
+    text-transform: uppercase;
+}
