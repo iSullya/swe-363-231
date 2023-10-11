@@ -86,13 +86,14 @@ nav#main_nav{
 }
 nav ul{
     position: relative;
-    left: 68px;
+    
 }
 
 nav ul li{
     width: 484px;
     height: 52px;
     display: inline;
+    font-family: Harmattan;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: -0.36px;
@@ -109,7 +110,7 @@ p#wlc_1{
     height: 236px;
 
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -127,7 +128,7 @@ p#wlc_2{
 
     
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -152,7 +153,7 @@ h2#sec2_h2{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -167,7 +168,7 @@ div#sec2_table{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -188,12 +189,12 @@ section#sec3{
 p#sec3_p1{
     position: absolute;
     top: -19px;
-    left: 68px;
+    left: 1100px;
 
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -203,6 +204,7 @@ p#sec3_p1{
 
 div#sec3_div1{
     position: absolute;
+    
     width: 1383px;
     height: 245px;
     top: 94px ;
@@ -234,7 +236,7 @@ a#img1_a1{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -276,7 +278,7 @@ a#img2_a1{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -302,7 +304,7 @@ div#sec4_div1{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -343,7 +345,7 @@ footer h3{
     height: 111px;
 
     color: #000;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -361,7 +363,7 @@ p#copyright{
 
     color: #000;
     text-align: center;
-    font-family: Gentium Book Basic;
+    font-family: Harmattan;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -369,10 +371,15 @@ p#copyright{
     letter-spacing: -0.54px;    
 }
 
+@font-face{
+    font-family: "Harmattan";
+    src:url(assets/Harmattan-Regular.ttf);
+}
+
 img#lngImg{
     position: absolute;
     top: 10px;
-    left: 1427px;
+    right: 1427px;
     width: 60px;
     height:60px;
 }
