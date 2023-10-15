@@ -16,19 +16,15 @@ table{
 thead{
     text-transform: uppercase;
 }
-
 tr:nth-child(even){
     background-color: rgb(249, 180, 131);
 }
 tr:hover{
     background-color: rgb(224, 126, 55);
 }
-
 h1,h2,h3,h4,h5,h6{
     text-transform: capitalize;
 }
-
-
 
 ::selection{
     color: #d9a689;
@@ -49,7 +45,6 @@ header{
     /* margin-bottom: 649px; */
 }
 
-
 img#main_img{
     position: absolute;
     top: 149px;
@@ -59,37 +54,36 @@ img#main_img{
     flex-shrink: 0;
     border-radius: 436px;
     object-fit: cover;
-
-    /* margin: 149px 895px 168px 181px; */
-    background: #C4C4C4;
-    
 }
 
 section#sec1{
-
     /* Frame 7 */
     position: relative;
     background: #d9a689;
     width: 1512px;
     height: 728px;
-    flex-shrink: 0;
-    /* margin-bottom: 2340px; */
+    
 }
-nav#main_nav{
+.main_nav{
     /* Rectangle 12 */
     width: 600px;
     height: 52px;
     position: absolute;
-    /* flex-shrink: 0; */
-    /* background:forestgreen ;     */
-    /* margin: 13px 1028px 663px 0px;  !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
 nav ul{
     position: relative;
     left: 68px;
+    top: 20px;
 }
-
-nav ul li{
+/* Navigation Bar */
+.navbar-items li{
     width: 484px;
     height: 52px;
     display: inline;
@@ -97,23 +91,67 @@ nav ul li{
     font-weight: 400;
     letter-spacing: -0.36px;
     margin-right:15px ;
-    
+}
+.navbar-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+.navbar-items a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+.navbar-items a:hover {
+    color: #70331a;
+}
+
+.main_nav:hover .navbar-items{
+    display: inline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hamicon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+img#lngImg{
+    position: absolute;
+    top: 10px;
+    left: 1427px;
+    width: 60px;
+    transition: 0.5s;
+}
+img#lngImg:hover{
+    background-color: #815a4a;
+    width: 80px;
 }
 p#wlc_1{
     position: absolute;
     top: 111px;
     left: 756px;
 
-    /* display: flex; */
     width: 444px;
     height: 236px;
 
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: -0.96px;    
 }
 p#wlc_2{
@@ -121,28 +159,23 @@ p#wlc_2{
     top: 384px;
     left: 763px;
 
-    display: flex;
     width: 418px;
     height: 91px;
 
-    
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.54px;    
 }
+
 section#sec2{
     /* Frame 8 */
     position: relative;
     width: 1512px;
     height: 763px;
-
 }
 h2#sec2_h2{
-    
     position: absolute; 
     top: 91px;
     left: 68px;
@@ -154,9 +187,7 @@ h2#sec2_h2{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 64px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.32px;     
 }
 
@@ -169,18 +200,15 @@ div#sec2_table{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.24px;    
-
+    letter-spacing: -0.24px;
 }
 
 section#sec3{
     /* Frame 9 */
     position: relative;
     width: 1512px;
-    height: 754px;   
+    height: 754px;
     margin-top: 0px;
 
     background: #d9a689;
@@ -190,14 +218,11 @@ p#sec3_p1{
     top: -19px;
     left: 68px;
 
-
     color: #000;
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.24px; 
 }
 
@@ -212,18 +237,15 @@ div#sec3_div1{
     border-bottom-style: groove;
     border-bottom-width: 3px;
 
-    /* background: #ffffff; */
 }
 
 img#div1_img1{
-
     position: absolute;
     top: 1px;
     left: 44px;
     width: 423px;
     height: 180px;
     object-fit: contain;
-
 }
 a#img1_a1{
     position: absolute;
@@ -236,14 +258,9 @@ a#img1_a1{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: -0.54px;   
-
 }
-
-
 div#sec3_div2{
     position: absolute;
     width: 1383px;
@@ -254,18 +271,15 @@ div#sec3_div2{
     border-bottom: #00000036;
     border-bottom-style: groove;
     border-bottom-width: 3px;
-    /* background: #ffffff; */
 }
 
 img#div1_img2{
-
     position: absolute;
     top: 1px;
     left: 44px;
     width: 423px;
     height: 180px;
     object-fit: contain;
-
 }
 a#img2_a1{
     position: absolute;
@@ -278,20 +292,15 @@ a#img2_a1{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: -0.54px;   
-
 }
-
-
 section#sec4{
     position: relative;
     width: 1512px;
     height: 417px;
-
 }
+
 div#sec4_div1{
     position: absolute;
     top: 71px;
@@ -304,9 +313,7 @@ div#sec4_div1{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.54px;    
 }
 
@@ -323,17 +330,13 @@ footer ul{
     position: absolute;
     top: 220px;
     left: 89px;
-
 }
 footer ul li{
-    
     display: inline;
     width: 110px;
     height:98px;
     margin-right: 15px;
-    
 }
-
 footer h3{
     position: absolute;
     top: 37px;
@@ -345,16 +348,16 @@ footer h3{
     color: #000;
     font-family: Gentium Book Basic;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;    
 }
-
 footer img{
-    width: 110px;
-    height:98px;
+    width: 80px;
+    transition: 0.5s;
 }
-
+footer img:hover{
+    background-color: #815a4a;
+    width: 100px;
+}
 p#copyright{
     position: absolute;
     top: 336px;
@@ -364,16 +367,8 @@ p#copyright{
     text-align: center;
     font-family: Gentium Book Basic;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.54px;    
 }
 
-img#lngImg{
-    position: absolute;
-    top: 10px;
-    left: 1427px;
-    width: 60px;
-    height:60px;
-}
+
